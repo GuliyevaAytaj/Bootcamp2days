@@ -8,7 +8,6 @@ public class day2task6 {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-
         if ((a==b) || (a<0) || ((a>100)&&(b>100)) ) {
             System.out.println( "a is "+ a + " and b is " + b + " -> true");
         }
