@@ -8,14 +8,15 @@ package day4Tasks.accentureTasks;
 //Hint: to get the text as an String array can be regular expression used e.g.: String[] words = Text.TEXT.split("\\s+");
 
 
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.*;
 
 public class day4task2 {
     public static void main(String[] args) {
-        String[] words = Text.TEXT.split("\\s+");
-        HashSet<String> uniqueWords = new HashSet<String>(Arrays.asList(words));
-        for (String uniq : uniqueWords)
-            System.out.println(uniq);
-    }
-}
+        String lowerCaseText = Text.TEXT.toLowerCase(Locale.ROOT);
+        String[] words = lowerCaseText.split("\\s+");
+        Set <String> unique = new HashSet<>();
+        unique.addAll(List.of(words));
+        System.out.println("The number of uniques words is: " + unique.stream().count());
+        System.out.println("The words are: " + unique);
+
+}}
