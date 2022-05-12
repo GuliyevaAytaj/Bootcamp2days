@@ -1,16 +1,15 @@
 public class day3Task1 {
     public static void main(String[] args) {
 
-        int raw[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-        int column[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+        int[][] multiplicationArr = new int[10][10];
+        int j;
+        int i;
 
-        for (int i = column[0]; i <= column[10]; ++i) {
-            for (int b = raw[0]; b <= raw[10]; ++b) {
-                System.out.println(b + "*" + i + " = " + (b * i));
+        for (i = 1; i < 10; i++){
+            for (j = 1; j < 10; j++) {
+                multiplicationArr[i][j] = (j+1)*(i+1);
+                System.out.println(i + " * " + j + " = " + multiplicationArr[i][j] + "\t");
             }
-
-        }
-
-    }
-
+            System.out.println();
+    }}
 }
