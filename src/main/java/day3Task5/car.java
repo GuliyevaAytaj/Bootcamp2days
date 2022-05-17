@@ -75,37 +75,43 @@ public class car extends vehicle {
         System.out.println("The number of seats in a car is " + numberOfSeats);
     }
 
-    public void isCarTurnOn(boolean isCarTurnOn) {
+    public boolean isCarTurnOn(boolean isCarTurnOn) {
         this.isCarTurnOn = isCarTurnOn;
         if (isCarTurnOn == true) {
             System.out.println("Your car is turned on");
         } else {
             System.out.println("Your car is turned off");
         }
+        return isCarTurnOn;
     }
 
-    public void driveLeft(boolean isLeftDirection) {
+    public boolean driveLeft(boolean isLeftDirection) {
         System.out.println("Car turned to the left");
+        return isLeftDirection;
     }
 
-    public void driveRight(boolean isRightDirection) {
+    public boolean driveRight(boolean isRightDirection) {
         System.out.println("Car turned to the right");
+        return isRightDirection;
     }
 
-    public void gearPark(boolean isGearP) {
+    public boolean gearPark(boolean isGearP) {
         System.out.println("Car`s gear in P");
+        return isGearP;
     }
 
     public void gearReverse(boolean isGearR) {
         System.out.println("Car`s gear in R");
     }
 
-    public void gearNeutral(boolean isGearN) {
+    public boolean gearNeutral(boolean isGearN) {
         System.out.println("Car`s gear in N");
+        return isGearN;
     }
 
-    public void gearDrive(boolean isGearD) {
+    public boolean gearDrive(boolean isGearD) {
         System.out.println("Car`s gear in D");
+        return isGearD;
     }
 
     public void getSpeed(int speed) {
